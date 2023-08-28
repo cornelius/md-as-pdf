@@ -2,8 +2,9 @@ on:
   push:
     paths:
       - 'src/**'
+  workflow_dispatch:
 
-name: CreatePDFs
+name: Create PDF
 
 jobs:
   makepdfs:

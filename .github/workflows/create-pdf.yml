@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: mkrakowitzer/actions-makepdfs@master
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/main'
       with:
         markdown_dir: src
         output_dir: auto-pdf

@@ -15,7 +15,7 @@ jobs:
       if: github.ref == 'refs/heads/main'
       with:
         markdown_file: README.md
-        output_file: output.pdf
+        pdf_file: output.pdf
     - uses: actions/upload-artifact@v1
       with:
         name: output.pdf

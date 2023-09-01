@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: mkrakowitzer/actions-makepdfs@master
+    - uses: cornelius/action-md-as-pdf
       if: github.ref == 'refs/heads/main'
       with:
-        markdown_dir: src
-        output_dir: auto-pdf
+        markdown_file: README.md
+        output_file: output.pdf
     - uses: actions/upload-artifact@v1
       with:
-        name: output-pdf
+        name: output.pdf
         path: auto-pdf

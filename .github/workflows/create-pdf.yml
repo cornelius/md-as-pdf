@@ -18,5 +18,5 @@ jobs:
         pdf_file: output.pdf
     - uses: actions/upload-artifact@v1
       with:
-        name: output.pdf
+        name: Generated PDF
         path: output.pdf
